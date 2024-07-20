@@ -101,7 +101,7 @@ async def lists(c, m):
     if querys == "":
         await m.reply(f'`/listbl [query]`', quote=True)
     elif querys != "":
-        link = f"https://www.tamilblasters.com/index.php?/search/&q={querys}&search_and_or=and&search_in=titles&sortby=relevancy"
+        link = f"https://www.tamilblasters.link/index.php?/search/&q={querys}&search_and_or=and&search_in=titles&sortby=relevancy"
         txt = await m.reply_text(f"Searching for: {querys} 🔍")
         driver.get(link)
         await asyncio.sleep(5)
@@ -141,15 +141,15 @@ async def ss(bot, message):
     N = 7
     name = ''.join(random.choices(string.ascii_uppercase +
                                   string.digits, k=N))
-    driver.get("https://www.tamilblasters.com/")
-    await txt.edit(text="Got Screenshot of 1TamilMv.com. Now Getting screenshot of latest movies of TamilBlasters.com")
+    driver.get("https://www.tamilblasters.link/")
+    await txt.edit(text="Got Screenshot of 1TamilMv.cz. Now Getting screenshot of latest movies of TamilBlasters.link")
     photo1 = name + ".png"
     driver.save_screenshot(photo1)
     await txt.delete()
 
     # sending captured ss to user
-    await message.reply_photo(photo, quote=True, caption="**Screenshot of latest movies of 1TamilMV.com**")
-    await message.reply_photo(photo1, quote=True, caption="**Screenshot of latest movies of TamilBlasters.com**")
+    await message.reply_photo(photo, quote=True, caption="**Screenshot of latest movies of 1TamilMV.cz**")
+    await message.reply_photo(photo1, quote=True, caption="**Screenshot of latest movies of TamilBlasters.link**")
 
     # deleting captured from db
     os.remove(photo)

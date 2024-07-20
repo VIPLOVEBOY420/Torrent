@@ -1,10 +1,3 @@
-import os
-
-API_ID = os.environ.get("API_ID")
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-
-if not API_ID or not API_HASH or not BOT_TOKEN:
-    raise ValueError("API_ID, API_HASH, and BOT_TOKEN must be set")
-
-print(f"API_ID: {API_ID}, API_HASH: {API_HASH}, BOT_TOKEN: {BOT_TOKEN}")
+API_ID = 24444928
+API_HASH = "0a278a515cd13ec8802b7dabed73dede"
+BOT_TOKEN = "7244860871:AAHaVrXypaQk5GkUhDbgeTxDhSx7vP7XMIU"

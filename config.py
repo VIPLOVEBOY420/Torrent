@@ -1,3 +1,4 @@
+import os 
 from telethon import TelegramClient
 
 # Ensure your API credentials are strings

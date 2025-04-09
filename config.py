@@ -2,9 +2,9 @@ import os
 from telethon import TelegramClient
 
 # Ensure your API credentials are strings
-API_ID = os.environ.get("API_ID", "23990433")
-API_HASH = os.environ.get("API_HASH", "e6c4b6ee1933711bc4da9d7d17e1eb20")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5811431199:AAGad6YjD5nC9PTgurWIbRM4krUpopevpf8")
+API_ID = os.environ.get("API_ID", "4353856")
+API_HASH = os.environ.get("API_HASH", "21baea4745fd7cc26a4d38a7452f3b42")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7601646044:AAGTFKdRzL7uTB0L7lEQy4rk19T2c9QCpNI")
 
 assert isinstance(API_ID, str), "API_ID must be a string"
 assert isinstance(API_HASH, str), "API_HASH must be a string"
